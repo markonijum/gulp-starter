@@ -42,3 +42,4 @@
     })
 
     gulp.task('createSprite',gulpSequence('cleanAllSprites','makeSprite','copySpriteCss','removeImgsForSpriteAndScss'));
+

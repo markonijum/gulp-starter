@@ -76,12 +76,13 @@ module.exports = {
         this.production.prebuild = (this.production.prebuild != undefined && this.production.prebuild.length > 0) ? this.production.prebuild : undefined;
         this.production.postbuild = (this.production.postbuild.length != undefined && this.production.postbuild.length > 0) ? this.production.postbuild : undefined;
 
-        // require('../gulpfile/tasks/createSprite');
+        require('../gulpfile/tasks/modernizr');
+        require('../gulpfile/tasks/watchScss');
 
       },
       development: {
-        prebuild: [],
-        postbuild: []
+        prebuild: ['modernizr'],
+        postbuild: ['watchScss']
       },
       production: {
         prebuild: [],
