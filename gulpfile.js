@@ -1,0 +1,2 @@
+require('./gulpfile/tasks/createSprite');
+
