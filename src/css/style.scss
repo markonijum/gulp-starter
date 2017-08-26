@@ -10,15 +10,17 @@
 @import "vendor/reset";
 @import "normalize.css/normalize";
 @import "font-awesome/scss/font-awesome";
-@import "animate.css/animate";
-@import "vendor/responsive-nav";
+
+// ENABLE ANIMATE CSS FUNCTINALITY
+// @import "animate.css/animate";
+
+//ENABLE RESPONSIVE NAV
+// @import "vendor/responsive-nva;
 
 /* ==========================================================================
    Custom Styles
    ========================================================================== */
 
-
-/* line 25, ../sass/style.scss */
 $susy: ( columns: 12,
 gutters: 1/4,
 math: fluid,
