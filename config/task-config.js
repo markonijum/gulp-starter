@@ -62,9 +62,8 @@ module.exports = {
           .pipe(browserSync.stream())    }
       }
     },
-
     production: {
-      rev:false
+      rev:true
     },
 
     additionalTasks: {
@@ -88,5 +87,9 @@ module.exports = {
         prebuild: [],
         postbuild: []
       }
-    }
+    },
+    
+    imgsForSprite: {
+      folderName: 'imgSprite'
+    },
   }

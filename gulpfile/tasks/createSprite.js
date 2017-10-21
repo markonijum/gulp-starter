@@ -1,5 +1,5 @@
 // module.exports = function(spritename) {
-
+    var config = require('../../config/task-config');
     var gulp = require('gulp');
     var copy = require('gulp-copy');
     var del = require('del');
@@ -12,12 +12,12 @@
     var ext = 'css';
     var copyFiles = ['./src/images/sprites/*.' + ext];
     var pasteFolder = './src/css/sprites/';
-    var imgsForSpriteFolder = 'imgsForSprite';
+    var imgsForSpriteFolder = config.imgsForSprite.folderName;
 
-    global.IMGS_FOR_SPRITE = imgsForSpriteFolder;
+    // global.IMGS_FOR_SPRITE = imgsForSpriteFolder;
     
     gulp.task('makeSprite', function () {
-      var spriteData = gulp.src( './src/images/imgsForSprite/*.png').pipe(spritesmith({
+      var spriteData = gulp.src( './src/images/' + imgsForSpriteFolder + '/*.png').pipe(spritesmith({
         imgName: spritename + '.png',
         cssName: spritename + '.' + ext,
         cssTemplate: './gulpfile/cssTemplates/template.handlebars',
