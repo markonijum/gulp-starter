@@ -2,3 +2,4 @@
 /public
 yarn.lock
 package-lock.json
+/src/js/modules/modernizr.js
