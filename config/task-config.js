@@ -19,6 +19,9 @@ module.exports = {
         $: "jquery",
         jQuery: "jquery"
       },
+      babel: {
+        presets: [["es2015", { "modules": false }], 'stage-1', "react"]
+      },
       loaders: [
         {
           test: /\.scss$/,
