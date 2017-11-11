@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "blendid": "^4.2.0",
     "bootstrap-sass": "^3.3.7",
